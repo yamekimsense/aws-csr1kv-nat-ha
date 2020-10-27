@@ -3,6 +3,13 @@
 Deploy CSR1kv on AWS NAT HA using AWS python SDK (BOTO3).
 
 
+## Prerequisites
+
+Two CSR1000v
+
+IOS-XE 17.3 or higher
+
+
 
 ## Use Case Description
 
@@ -13,13 +20,6 @@ Using AWS API, CSR1kv NAT HA is deployed:
     1) Private routing table is changed when failover.
     
     2) NAT IP pool is transferred when failover.
-
-
-## Prerequisites
-
-Two CSR1000v
-
-IOS-XE 17.3 or higher
 
 
 ## Re-produce
