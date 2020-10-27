@@ -117,5 +117,5 @@ event manager applet ha
 
   action 220 cli command "enable"
 
-  action 330 cli command "guestshell run sudo python3 /home/guestshell/python-code-name.py"
+  action 330 cli command "guestshell run sudo python3 /home/guestshell/a010-csr1kv-nat-ha.py.py"
 
