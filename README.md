@@ -12,17 +12,29 @@ Using AWS API, CSR1kv NAT HA is deployed:
     2) NAT IP pool is transferred when failover.
 
 
-## Installation
+## Prerequisites
 
-Use BFD and EEM to detect and activate the python code.
-Install on the guestshell of CSR1kv on both CSR1kv.
-Modify the NAT IP pool, route and NIC of AWS.
-Install AWS CLI and BOTO3 - AWS python SDK.
+Two CSR1000v
+IOS-XE 17.3 or higher
 
 
-## Configuration
+## Re-produce
 
-Modify the NAT IP pool, route and NIC of AWS.
+1. Use BFD and EEM to detect and activate the python code.
+2. Copy on the guestshell of CSR1kv on both CSR1kv.
+3. Modify the NAT IP pool, route and NIC of AWS.
+4. Install AWS CLI and BOTO3 - AWS python SDK.
+
+
+## Result
+
+When the active CSR1000v is down and BFD down was detected, the standby becomes active.
+When becomes active, the python code is executed by EEM.
+The python code changes the NAT IP from active to standby and modifies the route of private.
+
+
+## CSR1000v Configuration
+
 
 CSR1kv cli command:
 
@@ -64,58 +76,3 @@ event manager applet ha
  action 220 cli command "enable"
  action 330 cli command "guestshell run sudo python3 /home/guestshell/python-code-name.py"
 
-
-
-
-
-
-## Usage
-
-Modify the CLI config.
-Copy to the guestshell with AWS CLI install and BOTO3 install.
-
-
-
-### DevNet Sandbox
-
-[DevNet Sandbox](https://developer.cisco.com/site/sandbox/)
-
-
-## How to test the software
-
-Config two CSR1kv.
-Config BFD, NAT, and EEM with code above.
-Copy and modify the python code after install CLI and BOTO3.
-Make the failover using reload or tunnel down.
-
-
-## Known issues
-
-none.
-
-
-
-## Getting help
-
-Contact me.
-
-
-
-
-## Getting involved
-
-Works on python3.
-
-
-
-## Credits and references
-
-This is just experimental code and not for cisco offical support.
-
-For the official guide visit : https://www.cisco.com/c/en/us/support/docs/cloud-systems-management/prime-access-registrar/213601-csr1000v-ha-redundancy-deployment-guide.html
-
-----
-
-## Licensing info
-
-See the license file.
