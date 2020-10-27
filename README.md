@@ -7,14 +7,18 @@ Deploy CSR1kv on AWS NAT HA using AWS python SDK (BOTO3).
 ## Use Case Description
 
 CSR1kv doesn't support the stateful NAT high availability because AWS doesn't support broadcast and multicast.
+
 Using AWS API, CSR1kv NAT HA is deployed:
+
     1) Private routing table is changed when failover.
+    
     2) NAT IP pool is transferred when failover.
 
 
 ## Prerequisites
 
 Two CSR1000v
+
 IOS-XE 17.3 or higher
 
 
@@ -29,8 +33,11 @@ IOS-XE 17.3 or higher
 ## Result
 
 When the active CSR1000v is down and BFD down was detected, the standby becomes active.
+
 When becomes active, the python code is executed by EEM.
+
 The python code changes the NAT IP from active to standby and modifies the route of private.
+
 
 
 ## CSR1000v Configuration
