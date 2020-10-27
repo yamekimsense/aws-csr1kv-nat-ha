@@ -41,6 +41,10 @@ When becomes active, the python code is executed by EEM.
 The python code changes the NAT IP from active to standby and modifies the route of private.
 
 
+## Reference
+
+AWS BOTO3 API: https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
+
 
 ## CSR1000v Configuration
 
