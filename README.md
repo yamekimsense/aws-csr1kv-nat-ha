@@ -46,6 +46,11 @@ The python code changes the NAT IP from active to standby and modifies the route
 AWS BOTO3 API: https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
 
 
+## Video
+
+[![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
+
+
 ## CSR1000v Configuration
 
 
