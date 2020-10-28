@@ -48,7 +48,7 @@ AWS BOTO3 API: https://boto3.amazonaws.com/v1/documentation/api/latest/index.htm
 
 ## Video
 
-[![Everything Is AWESOME](https://i9.ytimg.com/vi_webp/ZT4mD4NAQfU/mqdefault.webp?time=1603884000000&sqp=COCn5fwF&rs=AOn4CLDL0XQfNwy3c8NW5OzVr_6YXnS_Kg)](https://youtu.be/ZT4mD4NAQfU "AWS CSR1kv NAT HA")
+[![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
 
 
 ## CSR1000v Configuration
